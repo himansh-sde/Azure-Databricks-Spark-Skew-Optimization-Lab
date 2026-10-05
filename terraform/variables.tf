@@ -74,7 +74,7 @@ variable "max_workers" {
 variable "auto_termination_minutes" {
   description = "Minutes of inactivity before cluster shuts down to save costs"
   type        = number
-  default     = 30
+  default     = 60
 }
 
 # ==========================================
