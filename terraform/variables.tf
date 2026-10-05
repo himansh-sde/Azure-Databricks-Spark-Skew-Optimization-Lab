@@ -56,7 +56,7 @@ variable "spark_version" {
 variable "node_type" {
   description = "Azure VM size for the Databricks nodes"
   type        = string
-  default     = "Standard_DS3_v2" # Mid-sized node, perfect for forcing disk spills
+  default     = "Standard_D4s_v3" # Mid-sized node, perfect for forcing disk spills
 }
 
 variable "min_workers" {
