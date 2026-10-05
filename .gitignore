@@ -1,0 +1,14 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files (often contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Python/Spark caches
+__pycache__/
+*.pyc
