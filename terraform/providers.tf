@@ -25,4 +25,5 @@ provider "azurerm" {
 # Configure the Databricks Provider
 # Inherits authentication from azurerm (Azure CLI) for workspace creation
 provider "databricks" {
+  host = azurerm_databricks_workspace.dbw.workspace_url
 }
