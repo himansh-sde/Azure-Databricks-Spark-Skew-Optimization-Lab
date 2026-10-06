@@ -56,19 +56,19 @@ variable "spark_version" {
 variable "node_type" {
   description = "Azure VM size for the Databricks nodes"
   type        = string
-  default     = "Standard_D4s_v3" # Mid-sized node, perfect for forcing disk spills
+  default     = "Standard_D2s_v3" # Mid-sized node, perfect for forcing disk spills
 }
 
 variable "min_workers" {
   description = "Minimum number of worker nodes"
   type        = number
-  default     = 2
+  default     = 1 # 1 worker (2 cores) + 1 driver (2 cores) = 4 cores total
 }
 
 variable "max_workers" {
   description = "Maximum number of worker nodes (Autoscaling limit)"
   type        = number
-  default     = 8
+  default     = 1 # Disable scaling to prevent hitting the quota mid-job
 }
 
 variable "auto_termination_minutes" {
