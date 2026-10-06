@@ -62,7 +62,7 @@ variable "node_type" {
 variable "min_workers" {
   description = "Minimum number of worker nodes"
   type        = number
-  default     = 0 # 1 worker (2 cores) + 1 driver (2 cores) = 4 cores total
+  default     = 1 # 1 worker (2 cores) + 1 driver (2 cores) = 4 cores total
 }
 
 variable "max_workers" {
